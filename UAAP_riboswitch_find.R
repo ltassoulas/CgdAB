@@ -9,7 +9,7 @@ library(stringr)
 set_entrez_key("entrez_key")
 t=1
 #load UAAP accession list
-id <- read.csv("uaap1_acc.txt",header=F)
+id <- read.csv("UAAP1_refseq_acc.txt",header=F)
 acc_id=matrix(id[1,],ncol=1)
 #retrieve genome accession number and positions
 while(t<=nrow(id)){
